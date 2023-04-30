@@ -1,6 +1,12 @@
 // -- products component
 import { Link, Outlet } from "react-router-dom";
 
+
+// -------------------------
+// relative links doesn't start with " / " and it will inherit the closest route in which they are rendered
+// it is very usefull when you have to link deeply nested paths
+
+
 const Products = () => {
   return (
     <>
