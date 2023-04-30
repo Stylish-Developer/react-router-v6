@@ -1,6 +1,6 @@
 nav {
-    background-color: dimgray;
-    height: 5vh;
+    background-color: #000000;
+    height: 7vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,3 +13,10 @@ nav a {
     color: #FFFFFF;
 
 }
+
+/* wit active class Name */
+
+/* nav a.active {
+    color: chartreuse;
+    text-decoration: underline wavy #FFFFFF;
+} */
