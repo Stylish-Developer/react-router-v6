@@ -6,7 +6,10 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/navbar";
 import OrderSummary from "./components/OrderSummary";
-import _404 from './components/404';
+import NoMatchRoute from "./components/404";
+import Products from "./components/Products";
+import Featured from "./components/FeaturedProducts";
+import New from "./components/NewProducts";
 
 // -- app component
 const App = () => {
@@ -18,7 +21,11 @@ const App = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="order-summary" element={<OrderSummary />} />
-        <Route path="*" element={<_404 />} />
+        <Route path="products" element={<Products />}>
+          <Route path="featured" element={<Featured />} />
+          <Route path="new" element={<New />} />
+        </Route>
+        <Route path="*" element={<NoMatchRoute />} />
       </Routes>
     </>
   );

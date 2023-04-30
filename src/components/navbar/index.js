@@ -16,15 +16,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav>
+      <nav className="primaryNav">
         <NavLink to="/" style={navStyle}>
           Home
         </NavLink>
         <NavLink to="/about" style={navStyle}>
           About
         </NavLink>
-        <NavLink to="contact" style={navStyle}>
+        <NavLink to="/contact" style={navStyle}>
           Contact
+        </NavLink>
+        <NavLink to="/products" style={navStyle}>
+          Products
         </NavLink>
       </nav>
     </>
