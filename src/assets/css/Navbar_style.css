@@ -1,4 +1,4 @@
-nav {
+.primaryNav {
     background-color: #000000;
     height: 7vh;
     display: flex;
@@ -6,13 +6,29 @@ nav {
     align-items: center;
 }
 
+
 nav a {
     text-decoration: none;
     font-size: large;
     margin-left: 16px;
     color: #FFFFFF;
-
 }
+
+.secondaryNav {
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #CCC;
+}
+
+.secondaryNav a {
+    text-decoration: none;
+    font-size: large;
+    margin-left: 16px;
+    color: #000000;
+}
+
 
 /* wit active class Name */
 

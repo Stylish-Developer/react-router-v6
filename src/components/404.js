@@ -15,7 +15,7 @@ const _404 = () => {
           height: "100%",
           display: "flex",
           alignItems: "center",
-          justifyContent:'center'
+          justifyContent: "center",
         }}
       >
         <img src={_404Img} alt="404_img" style={img404} />
