@@ -1,8 +1,9 @@
 import "./App.css";
+import React from 'react';
 
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import About from "./components/About";
+// import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/navbar";
 import OrderSummary from "./components/OrderSummary";
@@ -14,6 +15,7 @@ import Users from "./components/Users";
 import UserDetails from "./components/userDetails";
 import Admin from "./components/admin";
 
+const LazyLoadAbout = React.lazy(() => import('./components/About'));
 // -- app component
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="about" element={<React.Suspense fallback="Loading...">
+          <LazyLoadAbout />
+        </React.Suspense>} /> 
         <Route path="contact" element={<Contact />} />
         <Route path="order-summary" element={<OrderSummary />} />
         <Route path="products" element={<Products />}>
