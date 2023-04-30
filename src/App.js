@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/navbar";
+import OrderSummary from "./components/OrderSummary";
 
 // -- app component
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="order-summary" element={<OrderSummary />} />
       </Routes>
     </>
   );

@@ -9,11 +9,11 @@ const Navbar = () => {
     if (isActive) {
       return {
         color: "chartreuse",
-
         textDecoration: "underline wavy orange",
       };
     }
   };
+
   return (
     <>
       <nav>
