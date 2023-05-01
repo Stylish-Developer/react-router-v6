@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('order-summary');
+    navigate("order-summary");
   };
 
   return (

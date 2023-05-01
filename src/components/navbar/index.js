@@ -32,6 +32,12 @@ const Navbar = () => {
         <NavLink to="/users" style={navStyle}>
           Users
         </NavLink>
+        <NavLink to="/profile" style={navStyle}>
+          Profile
+        </NavLink>
+        <NavLink to="/login" style={navStyle}>
+          Login
+        </NavLink>
       </nav>
     </>
   );
